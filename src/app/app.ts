@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
-import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [PostCreateComponent],
+  imports: [PostCreateComponent, HeaderComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
