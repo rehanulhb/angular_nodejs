@@ -3,7 +3,6 @@ import { Component, signal } from '@angular/core';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
-import { Post } from './posts/post.model';
 
 @Component({
   selector: 'app-root',
@@ -13,9 +12,4 @@ import { Post } from './posts/post.model';
 })
 export class App {
   protected readonly title = signal('angular-node');
-  storedPosts: Post[] = [];
-
-  onPostAdded(post: Post) {
-    this.storedPosts.push(post);
-  }
 }
