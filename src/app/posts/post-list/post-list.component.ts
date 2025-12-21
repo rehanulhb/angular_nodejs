@@ -4,10 +4,21 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { Post } from '../post.model';
 import { CommonModule } from '@angular/common';
 import { PostsService } from '../posts.service';
+import { MatAnchor } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-post-list',
-  imports: [MatExpansionModule, CommonModule],
+  imports: [
+    MatExpansionModule,
+    CommonModule,
+    MatAnchor,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+  ],
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.css'],
 })

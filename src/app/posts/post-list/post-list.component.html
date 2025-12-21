@@ -6,6 +6,16 @@
           {{ post.title }}
         </mat-expansion-panel-header>
         <p>{{ post.content }}</p>
+        <mat-action-row>
+          <div class="flex justify-between justify-center">
+            <section>
+              <div class="example-button-row">
+                <button matButton="filled">EDIT</button>
+                <button matButton="filled">DELETE</button>
+              </div>
+            </section>
+          </div>
+        </mat-action-row>
       </mat-expansion-panel>
     }
   </mat-accordion>
